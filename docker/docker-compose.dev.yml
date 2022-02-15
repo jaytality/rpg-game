@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  web:
+    external_links:
+      - core_db
+    environment:
+      VIRTUAL_HOST: ${PROJECTNAME}.local
+
+networks:
+    default:
+      external:
+        name: devproxy

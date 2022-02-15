@@ -1,0 +1,17 @@
+.config*
+.env
+.dev
+.prod
+
+data/db/*
+data/logs/*
+data/pma/*
+data/uploads/*
+
+code/.env
+
+composer.lock
+vendor/
+
+!.gitkeep
+!.config.example

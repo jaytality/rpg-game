@@ -1,0 +1,13 @@
+{
+    "require" : {
+        "phpmailer/phpmailer": "~5.2"
+    },
+    "autoload" : {
+        "psr-4": {
+            "spark\\Core\\" : "library/core/",
+            "spark\\Helpers\\" : "library/helpers/",
+            "spark\\Controllers\\" : "app/controllers/",
+            "spark\\Models\\" : "app/models/"
+        }
+    }
+}
