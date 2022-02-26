@@ -41,6 +41,12 @@ func main() {
 
 	// create a user
 	router.HandleFunc("/users/", CreateUser).Methods("POST")
+
+	// Delete a specific user by ID
+	router.HandleFunc("/users/{userid}", DeleteUser).Methods("DELETE")
+
+	fmt.Println("Server listening at 8000")
+	log.Fatal(http.ListenAndServe(":8000", router))
 }
 
 // end of file
